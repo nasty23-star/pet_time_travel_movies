@@ -175,3 +175,12 @@ body {
     right: 35px;
     }
   }
+
+@media screen and (max-width: 400px) {
+  h {
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
