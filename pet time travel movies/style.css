@@ -2,12 +2,18 @@ body {
     width: 100%;
     height: auto;
     background: #0E0756;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
-  span {
-    color: pink;
-  }
+.content {
+  width: 90%;
+  margin: 0 auto;
+ 
+}
+  .hambr{
+  color: #F19CE8;
+  padding-left: 5%;
+}
   .overlay {
     height: 100%;
     width: 0;
@@ -149,7 +155,18 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  .up  {
+  padding-left: 5%;
+  padding-top: 20px;
+    height: 15px;
+  color: #F19CE8;
   
+}
+.up a {
+  text-decoration: none;
+  color: #F19CE8;
+
+}
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
