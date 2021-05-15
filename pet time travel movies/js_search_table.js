@@ -1,4 +1,4 @@
-<script>
+
 function tableSearch() {
     var phrase = document.getElementById('search');
     var table = document.getElementById('mytable');
@@ -18,4 +18,3 @@ function tableSearch() {
 
     }
 }
-</script>
