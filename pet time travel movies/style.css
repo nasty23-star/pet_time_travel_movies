@@ -105,7 +105,7 @@ body {
     background-color: #f1f1f1;
   }
   h1 {
-    font-size: 20px;
+    font-size: 28px;
     color: pink;
     display: flex;
     justify-content: center;
@@ -137,7 +137,7 @@ body {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-image: url("https://i.ibb.co/nQgCJzh/time-travel-card-bg.jpg");
   }
   
   .container:hover .overlay-over {
