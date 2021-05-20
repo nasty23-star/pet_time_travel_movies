@@ -10,9 +10,10 @@
 </head>
 
 <body>
-  <div class="lightning flashit"></div>
   <div class="content">
-  <section class="menu_hidden">
+  
+  
+  <section class="menu-hidden">
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -31,6 +32,8 @@
     <a href="#search">Фильмы на выбор</a>
     <a href="#top">Личный топ-10</a>
       </div>
+   <div class="lightning flashit" id="myDIV"></div>   
+  <button onclick="myFunction()" class="onoff">отключить молнию</button>
     </section>
   <section class="idea">
   <h>Фильмы о путешествиях во времени</h>
@@ -45,9 +48,9 @@
     <button class="more"><span><a href="https://clck.ru/A647y" target="_blank">Узнать больше</a></span></button>
   </section>
     
-  <section class="pop_culture">
+  <section class="pop-culture">
     
-    <h1><a name="pop_cult">Путешествия во времени в поп-культуре</a></h1>
+    <h1><a name="pop-cult">Путешествия во времени в поп-культуре</a></h1>
     <p>Описание путешествий во времени является распространённым приёмом, используемым в научно-фантастической литературе. В фантастике идея таких путешествий и специального устройства («машины») для этой цели приобрела популярность во многом благодаря известному роману Герберта Уэллса «Машина времени» (1895).</p>
 <p>Путешествия главного героя во времени в собственном теле без помощи технических приспособлений описаны в «классических» произведениях Марка Твена «Янки при дворе короля Артура», Джека Лондона «Межзвёздный скиталец», Сватоплука Чеха «Путешествие пана Броучека в XV столетие», Лазаря Лагина «Голубой человек» и многих других. С этим связано понятие «попаданец» — персонаж, который против своей воли попал в другой мир или другое время и, не имея возможности вернуться, выстраивает там свою жизнь.</p>
 
@@ -55,12 +58,12 @@
     <p>Представим, человек вернулся в прошлое и сделал нечто такое, из-за чего погиб его дедушка до встречи с бабушкой. Что происходит с внуком? Он исчезнет, растворится на атомы или продолжит жить? В этом заключается временной парадокс убитого дедушки, который начал появляться в рассказах фантастов уже в конце 1920-ых годов. Согласно некоторым источникам, впервые парадокс описал французский писатель Рене Баржавель в 1940-ых.</p>
     <p>Парадокс заключается не только в поступках по отношению к дедушкам, но и свободе действий героев в прошлом. Создатели сериалов и фильмов по-разному подходили к этим проблемам. Например, в киносерии «Назад в будущее» встречи с самим собой разрушают пространственно-временной континуум, а главный герой Марти Макфлай старается как можно меньше влиять на события, чтобы ненароком не изменить собственную реальность. Правда, в финале оригинала он ее все равно меняет, но в хорошую сторону и так, что сам остается в живых.</p>
     
-    <button class="know"><span><a href="https://news.itmo.ru/ru/news/8492/" target="_blank">Больше о кино</a></span></button>
+    <button class="know"><span><a href="https://news.itmo.ru/ru/news/8492/" target="_blank">О кино</a></span></button>
   </section>
     
-  <section class="search_choose">
+  <section class="search-choose">
   <h1><a name="search">Фильмы на выбор</a></h1>
-    <div class="table_box">
+    <div class="table-box">
 <input type="text" class="search" id="search" onkeyup="tableSearch()"placeholder="Поиск по названию и году..." title="Type in a name"></div>
  <table id="mytable">
 <thead id="tableHead">
@@ -72,7 +75,6 @@
     <th>
       Сюжет
     </th>
-    
     <th>
       Рейтинг
     </th>
@@ -107,26 +109,186 @@
    </tr>
 
 <tr>
+    <td>Азирис Нуна</td>
+     <td><a href="https://clck.ru/UueTY">=></a></td>
+     <td>imdb - 3,5/10
+     <br>КиноПоиск - 3,8/10</br>
+</td>
+ <td>Россия</td>
+     <td>2006</td>
+   </tr>
+
+<tr>
+    <td>Алиса в Зазеркалье(англ. Alice Through the Looking Glass)</td>
+     <td><a href="https://clck.ru/Uuei9">=></a></td>
+     <td>imdb - 5,5/10
+     <br>КиноПоиск - 6,1/10</br>
+</td>
+ <td>Великобритания</td>
+     <td>США</td>
+   </tr>
+
+<tr>
+    <td>Алиса в Зазеркалье(англ. Alice Through the Looking Glass)</td>
+     <td><a href="https://clck.ru/Uuejc">=></a></td>
+     <td>imdb - 6,2/10
+     <br>КиноПоиск - 6,1/10</br>
+</td>
+ <td>США</td>
+     <td>2016</td>
+   </tr>
+
+<tr>
     <td>Арка(англ. ARQ)</td>
      <td><a href="https://clck.ru/Usdng">=></a></td>
      <td>imdb - 6,4/10
-     <br>КиноПоиск - 6,4/10
+     <br>КиноПоиск - 6,4/10</br>
 </td>
  <td>США, 
  Канада</td>
      <td>2016</td>
    </tr>
 
+<tr>
+    <td>Армия тьмы(англ. Army of Darkness)</td>
+     <td><a href="https://clck.ru/Uuenf">=></a></td>
+     <td>imdb - 7,5/10
+     <br>КиноПоиск - 7,6/10</br>
+</td>
+ <td>США</td>
+     <td>	1992</td>
+   </tr>
+
+<tr>
+    <td>Бандиты во времени(англ. Time Bandits)</td>
+     <td><a href="https://clck.ru/UvHhc">=></a></td>
+     <td>imdb - 7/10
+     <br>КиноПоиск - 6,8/10</br>
+</td>
+ <td>Великобритания</td>
+     <td>	1981</td>
+   </tr>
 
    <tr>
      <td>Беги, Лола, беги(нем. Lola rennt)</td>
      <td><a href="https://clck.ru/Usa8h">=></a</td>
      <td>imdb - 7,6/10
-     <br>КиноПоиск - 7,6/10</br> </td>
+     <br>КиноПоиск - 7,6/10</br>
+     </td>
     <td>Германия</td>
      <td>1998</td>
    </tr>
   
+<tr>
+    <td>Бегство мистера Мак-Кинли</td>
+     <td><a href="https://clck.ru/UvHku">=></a></td>
+     <td>imdb - 6,6/10
+     <br>КиноПоиск - 6,9/10</br>
+</td>
+ <td>СССР</td>
+     <td>	1975</td>
+   </tr>
+
+<tr>
+    <td>Бегство с планеты обезьян(англ. Escape from the Planet of the Apes)</td>
+     <td><a href="https://clck.ru/UvHvq">=></a></td>
+     <td>imdb - 6,3/10
+     <br>КиноПоиск - 6,7/10</br>
+</td>
+ <td>США</td>
+     <td>	1971</td>
+   </tr>
+
+<tr>
+    <td>Бегущий во времени(англ. Time Runner)</td>
+     <td><a href="https://clck.ru/UvJ8L">=></a></td>
+     <td>imdb - 4,2/10
+     <br>КиноПоиск -  4,4/10</br>
+</td>
+ <td>Канада, США</td>
+     <td>	1993</td>
+   </tr>
+
+<tr>
+    <td>Безопасность не гарантируется(англ. Safety Not Guaranteed)</td>
+     <td><a href="https://clck.ru/UvJDf">=></a></td>
+     <td>imdb - 7/10
+     <br>КиноПоиск - 6,4/10</br>
+</td>
+ <td>США</td>
+     <td>	2012</td>
+   </tr>
+
+<tr>
+    <td>Бигглз: Приключения во времени(англ. Biggles: Adventures in Time)</td>
+     <td><a href="https://clck.ru/UvJKT">=></a></td>
+     <td>imdb - 5,7/10
+     <br>КиноПоиск - 6,7/10</br>
+</td>
+ <td>Великобритания, США</td>
+     <td>	1986</td>
+   </tr>
+
+<tr>
+    <td>Билл и Тед снова в деле(англ. Bill & Ted Face the Music)</td>
+     <td><a href="https://clck.ru/UvJXH">=></a></td>
+     <td>imdb - 6/10
+     <br>КиноПоиск - 5,6/10</br>
+</td>
+ <td>США</td>
+     <td>2020</td>
+   </tr>
+
+<tr>
+    <td>Бойфренд из будущего(англ. About Time)</td>
+     <td><a href="https://clck.ru/UvJeQ">=></a></td>
+     <td>imdb - 7,8/10
+     <br>КиноПоиск - 7,8/10</br>
+</td>
+ <td>Великобритания</td>
+     <td>	2013</td>
+   </tr>
+
+<tr>
+    <td>Будущее(англ. The Future)</td>
+     <td><a href="https://clck.ru/UvJkU">=></a></td>
+     <td>imdb - 6,2/10
+     <br>КиноПоиск - 5,9//10</br>
+</td>
+ <td>Германия, США</td>
+     <td>2011</td>
+   </tr>
+
+<tr>
+    <td>В ловушке времени(англ. Timeline)</td>
+     <td><a href="https://clck.ru/UvJt8">=></a></td>
+     <td>imdb - 5,6/10
+     <br>КиноПоиск -  6,3//10</br>
+</td>
+ <td>США</td>
+     <td>2003</td>
+   </tr>
+
+<tr>
+    <td>В плену времени</td>
+     <td><a href="https://clck.ru/UvJyd">=></a></td>
+     <td>imdb - /10
+     <br>КиноПоиск - 6,5//10</br>
+</td>
+ <td>Россия</td>
+     <td>	2006</td>
+   </tr>
+
+<tr>
+    <td>Вечно молодой(англ. Forever Young)</td>
+     <td><a href="https://clck.ru/UvK83">=></a></td>
+     <td>imdb - 6,3/10
+     <br>КиноПоиск - 7,4/10</br>
+</td>
+ <td>США</td>
+     <td>1992</td>
+   </tr>
+
 <tr>
     <td>Взлётная полоса(фр. La Jetée)</td>
      <td><a href="https://clck.ru/Uses4">=></a</td>
@@ -135,6 +297,36 @@
 </td>
      <td>Франция</td>
  <td>1962</td>
+   </tr>
+
+<tr>
+    <td>Вне времени(англ. The Lovers)</td>
+     <td><a href="https://clck.ru/UvMLh">=></a></td>
+     <td>imdb - 4,6/10
+     <br>КиноПоиск - 5,1/10</br>
+</td>
+ <td> Бельгия, Индия, Австралия</td>
+     <td>2013</td>
+   </tr>
+
+<tr>
+    <td>Во имя короля 2: Два мира(англ. In the Name of the King 2: Two Worlds)</td>
+     <td><a href="https://clck.ru/UvMVt">=></a></td>
+     <td>imdb - 3,1/10
+     <br>КиноПоиск - 3,3/10</br>
+</td>
+ <td>Германия, Канада</td>
+     <td>	2011</td>
+   </tr>
+
+<tr>
+    <td>Во имя короля 3(англ. In the Name of the King 3: The Last Mission)</td>
+     <td><a href="https://clck.ru/UvMnF">=></a></td>
+     <td>imdb - 3,1/10
+     <br>КиноПоиск - 2,7/10</br>
+</td>
+ <td>США, Болгария, Канада</td>
+     <td>2014</td>
    </tr>
 
 <tr>
@@ -148,6 +340,36 @@
    </tr>
 
 <tr>
+    <td>Вторжение Далеков на Землю(англ. Daleks – Invasion Earth: 2150 A.D.)</td>
+     <td><a href="https://clck.ru/UvNN6">=></a></td>
+     <td>imdb - 6/10
+     <br>КиноПоиск - 6,1/10</br>
+</td>
+ <td>Великобритания</td>
+     <td>1966</td>
+   </tr>
+
+<tr>
+    <td>Гарри Поттер и узник Азкабана(англ. Harry Potter and the Prisoner of Askaban)</td>
+     <td><a href="https://clck.ru/UvP8X">=></a></td>
+     <td>imdb - 7,9/10
+     <br>КиноПоиск - 8,2/10</br>
+</td>
+ <td> Великобритания, США</td>
+     <td>2004</td>
+   </tr>
+
+<tr>
+    <td>Годзилла против Кинга Гидоры(яп. ゴジラvsキングギドラ)</td>
+     <td><a href="https://clck.ru/UvPJK">=></a></td>
+     <td>imdb - 6,6/10
+     <br>КиноПоиск - 6,1/10</br>
+</td>
+ <td>Япония</td>
+     <td>	1991</td>
+   </tr>
+
+<tr>
     <td>Грань будущего(англ. Edge of Tomorrow)</td>
   <td><a href="hhttps://clck.ru/Usfcg">=></a></td>
      <td>imdb - 7,9/10
@@ -155,6 +377,26 @@
 </td>
      <td>США</td>
  <td>2014 </td>
+   </tr>
+
+<tr>
+    <td></td>
+     <td><a href="">=></a></td>
+     <td>imdb - /10
+     <br>КиноПоиск - /10</br>
+</td>
+ <td></td>
+     <td></td>
+   </tr>
+
+<tr>
+    <td></td>
+     <td><a href="">=></a></td>
+     <td>imdb - /10
+     <br>КиноПоиск - /10</br>
+</td>
+ <td></td>
+     <td></td>
    </tr>
 
 <tr>
@@ -199,7 +441,8 @@
      <td>Донни Дарко(англ. Donnie Darko)</td>
      <td><a href="https://clck.ru/Usakq">=></a></td>
      <td>imdb - 8/10 
-       <br>КиноПоиск - 7,6/10</br> </td>
+       <br>КиноПоиск - 7,6/10</br>
+</td>
   <td>США</td>
      <td>2001</td>
    </tr>
@@ -223,45 +466,95 @@
  <td>1987</td>
    </tr>
 
-<td></td>
-     <td><a href="https://clck.ru/UsgwU">=></a></td>
-     <td>imdb - /10
-       <br>КиноПоиск - /10</br>
+<td>Игры преисподней(англ. Mine Games)</td>
+     <td><a href="https://clck.ru/UuE2R">=></a></td>
+     <td>imdb - 5,4//10
+       <br>КиноПоиск - 5,6/10</br>
 </td>
-     <td></td>
- <td></td>
+     <td>США</td>
+ <td>2012</td>
    </tr>
 
-<td></td>
-     <td><a href="https://clck.ru/UsgwU">=></a></td>
-     <td>imdb - /10
-       <br>КиноПоиск - /10</br>
+<td>Исходный код(англ. Source Code)</td>
+     <td><a href="https://clck.ru/UuEJq">=></a></td>
+     <td>imdb - 7,5/10
+       <br>КиноПоиск - 7,8/10</br>
 </td>
-     <td></td>
- <td></td>
+     <td>США, Франция, Канада</td>
+ <td>	2011</td>
    </tr>
 
-<td></td>
-     <td><a href="https://clck.ru/UsgwU">=></a></td>
-     <td>imdb - /10
-       <br>КиноПоиск - /10</br>
+<td>Континуум(англ. Project Almanac)</td>
+     <td><a href="https://clck.ru/UuEaM">=></a></td>
+     <td>imdb - 7,6/10
+       <br>КиноПоиск - 6,4/10</br>
 </td>
      <td></td>
- <td></td>
+ <td>	2015</td>
    </tr>
 
-<td></td>
-     <td><a href="https://clck.ru/UsgwU">=></a></td>
-     <td>imdb - /10
-       <br>КиноПоиск - /10</br>
+<td>Лимб(англ. Haunter)</td>
+     <td><a href="https://clck.ru/UuEqY">=></a></td>
+     <td>imdb - 5,9/10
+       <br>КиноПоиск - 6/10</br>
 </td>
-     <td></td>
- <td></td>
+     <td>Канада</td>
+ <td>2013</td>
+   </tr>
+
+<tr>
+    <td>Матрица времени(англ. Before I Fall)</td>
+  <td><a href="https://clck.ru/UuFEc">=></a></td>
+     <td>imdb - 6,5/10
+       <br>КиноПоиск - 6,3/10</br>
+</td>
+  <td>США</td>
+     <td>2017</td>
+   </tr>
+
+<tr>
+    <td>Невероятные выходные(исп. El increíble finde menguante)</td>
+  <td><a href="https://clck.ru/UuFNv">=></a></td>
+     <td>imdb - 6,1/10
+       <br>КиноПоиск - 4,4/10</br>
+</td>
+     <td>Испания</td>
+   <td>2019</td>
+   </tr>
+
+<tr>
+    <td>Однажды ночью(англ. 'Twas the Night)</td>
+     <td><a href="https://clck.ru/UuG4q">=></a></td>
+     <td>imdb - 5,3/10
+       <br>КиноПоиск - 8,3/10</br>
+</td>
+ <td>США</td>
+     <td>2001</td>
+   </tr>
+
+<tr>
+    <td>Паранормальное(англ. The Endless)</td>
+     <td><a href="https://clck.ru/UuGcT">=></a></td>
+     <td>imdb - 6,5/10
+       <br>КиноПоиск - 6,2/10</br>
+</td>
+     <td>США</td>
+<td>2017</td>
+   </tr>
+
+<tr>
+    <td>Патруль времени(англ. Predestination)</td>
+     <td><a href="https://clck.ru/UuGrd">=></a></td>
+     <td>imdb - 7,5/10
+       <br>КиноПоиск - 6,9/10</br>
+</td>
+     <td>Австралия</td>
+<td>2014</td>
    </tr>
 
    <tr>
-     <td>Петля(Hurok)</td>
-     <td><a href="">=></a></td>
+     <td>Петля(венг. Hurok)</td>
+     <td><a href="https://clck.ru/UuGzK">=></a></td>
      <td>imdb -  6,6/10 
        <br>КиноПоиск - 6,0/10</br>
 </td>
@@ -270,32 +563,225 @@
    </tr>
 
 <tr>
-    <td></td>
-     <td></td>
-     <td>imdb - /10
-       <br>КиноПоиск - /10</br>
+    <td>Петля времени(англ. Looper)</td>
+     <td><a href="https://clck.ru/UuJBv">=></a></td>
+     <td>imdb - 7,4/10
+       <br>КиноПоиск - 7/10</br>
 </td>
-     <td></td>
+     <td>США, КНР</td>
+<td>2012</td>
+   </tr>
+
+<tr>
+    <td>Пиджак(англ. The Jacket)</td>
+     <td><a href="https://clck.ru/UuJM4">=></a></td>
+     <td>imdb - 7,1/10
+       <br>КиноПоиск - 7,8/10</br>
+</td>
+     <td>США</td>
+ <td>2005</td>
+   </tr>
+
+<tr>
+    <td>Провал во вреемени(англ. Retroactive)</td>
+     <td><a href="https://clck.ru/UuJVn">=></a></td>
+    <td>imdb - 6,2/10
+       <br>КиноПоиск - 6,8/10</br>
+</td>
+     <td>США</td>
+  <td>1997</td>
+   </tr>
+
+<tr>
+    <td>Снова голый(швед. Naken) </td>
+     <td><a href="https://clck.ru/UuJe3">=></a></td>
+    <td>imdb - 5,1/10
+    <br>КиноПоиск - 6.1/10</br>
+</td>
+     <td>Швеция</td>
+  <td>2000</td>
+   </tr>
+
+<tr>
+    <td>Счастливого дня смерти(англ. Happy Death Day)</td>
+     <td><a href="https://clck.ru/UuJnD">=></a></td>
+    <td>imdb - 6,6/10
+       <br>КиноПоиск - 6,6/10</br>
+</td>
+     <td>США</td>
+  <td>2017</td>
+   </tr>
+
+<tr>
+    <td>Счастливого нового дня смерти(англ. Happy Death Day 2U)</td>
+     <td><a href="https://clck.ru/UuJto">=></a></td>
+    <td>imdb - 6,2/10
+       <br>КиноПоиск - 6,2/10</br>
+</td>
+     <td>США</td>
+  <td>2019</td>
+   </tr>
+
+<tr>
+    <td>Тайна перевала Дятлова(англ. The Dyatlov Pass Incident)</td>
+     <td><a href="https://clck.ru/UuJyn">=></a></td>
+    <td>imdb - 5,7/10
+       <br>КиноПоиск - 5,1/10</br>
+</td>
+     <td>Россия, США</td>
+  <td>2013</td>
+   </tr>
+
+<tr>
+    <td>Треугольник(англ. Triangle)</td>
+     <td><a href="https://clck.ru/UuKPD">=></a></td>
+    <td>imdb - 6,9/10
+       <br>КиноПоиск - 6,8/10</br>
+</td>
+     <td>Великобритания, Австралия</td>
+  <td>2009</td>
+   </tr>
+
+<tr>
+    <td>Уже вчера(итал. È già ieri, исп. Un día sin fin)</td>
+     <td><a href="https://clck.ru/UuKUY">=></a></td>
+    <td>imdb - 6,5/10
+       <br>КиноПоиск - 6,3/10</br>
+</td>
+     <td>Италия, Испания, Великобритания</td>
+  <td>2004</td>
    </tr>
 
 <tr>
     <td></td>
-     <td></td>
-     <td>
-       <br></br>
-</td>
-     <td></td>
-   </tr>
-
-<tr>
-    <td></td>
-     <td></td>
+     <td><a href="">=></a></td>
     <td>imdb - /10
        <br>КиноПоиск - /10</br>
 </td>
      <td></td>
+  <td></td>
    </tr>
 
+
+<tr>
+    <td>Чапаев с нами</td>
+     <td><a href="https://clck.ru/UuMLA">=></a></td>
+    <td>imdb - 6,3/10
+       <br>КиноПоиск - 7/10</br>
+</td>
+     <td>СССР</td>
+  <td>1941</td>
+   </tr>
+
+<tr>
+    <td>Часто задаваемые вопросы о путешествиях во времени(англ. F.A.Q. About Time Travel)</td>
+     <td><a href="https://clck.ru/UuKYQ">=></a></td>
+    <td>imdb - 7,1/10
+       <br>КиноПоиск - 7/10</br>
+</td>
+     <td>Великобритания</td>
+  <td>2009</td>
+   </tr>
+
+<tr>
+    <td>Черепашки-ниндзя III(англ. Teenage Mutant Ninja Turtles III)</td>
+     <td><a href="https://clck.ru/Uue5c">=></a></td>
+    <td>imdb - 4,8/10
+       <br>КиноПоиск - 6,2/10</br>
+</td>
+     <td>США</td>
+  <td>1993</td>
+   </tr>
+
+<tr>
+    <td>Чернильное сердце(англ. Inkheart)</td>
+     <td><a href="https://clck.ru/UueAX">=></a></td>
+    <td>imdb - 6,1/10
+       <br>КиноПоиск - 6,3/10</br>
+</td>
+     <td> Великобритания, Германия, США</td>
+  <td>2008</td>
+   </tr>
+
+<tr>
+    <td>Чёрный рыцарь(англ. Black Knight)</td>
+     <td><a href="https://clck.ru/UueDJ">=></a></td>
+    <td>imdb - 4,9/10
+       <br>КиноПоиск - 6,5/10</br>
+</td>
+     <td>США</td>
+  <td>2001</td>
+   </tr>
+
+<tr>
+    <td>Что-то с телефоном</td>
+     <td><a href="https://clck.ru/UueFa">=></a></td>
+    <td>imdb - 6,6/10
+       <br>КиноПоиск - 7,5/10</br>
+</td>
+     <td>СССР</td>
+  <td>1979</td>
+   </tr>
+
+<tr>
+    <td>Человек первого века(чеш. Muž z prvního století</td>
+     <td><a href="https://clck.ru/UueHk">=></a></td>
+    <td>imdb - 6,1/10
+       <br>КиноПоиск - 6,4/10</br>
+</td>
+     <td>Чехословакия</td>
+  <td>	1962</td>
+   </tr>
+
+<tr>
+    <td>Шаг с крыши</td>
+     <td><a href="https://clck.ru/UuLNZ">=></a></td>
+    <td>imdb - 6,5/10
+       <br>КиноПоиск - 6,9/10</br>
+</td>
+     <td>СССР</td>
+  <td>1970</td>
+   </tr>
+
+<tr>
+    <td>Эффект бабочки(англ. The Butterfly Effect)</td>
+     <td><a href="https://clck.ru/UuLRp">=></a></td>
+    <td>imdb - 7,6/10
+       <br>КиноПоиск - 8,2//10</br>
+</td>
+     <td>США</td>
+  <td>2004</td>
+   </tr>
+
+<tr>
+    <td>Эффект бабочки 2(англ. The Butterfly Effect 2)</td>
+     <td><a href="https://clck.ru/UuLW5">=></a></td>
+    <td>imdb - 4,5/10
+       <br>КиноПоиск - 4,7/10</br>
+</td>
+     <td>США</td>
+  <td>2006</td>
+   </tr>
+
+<tr>
+    <td>Эффект бабочки 3: Откровения(англ. The Butterfly Effect 3: Revelations)</td>
+     <td><a href="https://clck.ru/UuLc9">=></a></td>
+    <td>imdb - 5,6/10
+       <br>КиноПоиск - 5,6/10</br>
+</td>
+     <td>США</td>
+  <td>2009</td>
+   </tr>
+
+<tr>
+    <td>Я убил Эйнштейна, господа(чеш. Zabil jsem Einsteina, pánové)</td>
+     <td><a href="https://clck.ru/UuLkR">=></a></td>
+    <td>imdb - 6,9/10
+       <br>КиноПоиск - 6,3/10</br>
+</td>
+     <td>Чехословакия</td>
+  <td>1970</td>
+   </tr>
 </tbody>
   </table>
 
@@ -397,6 +883,7 @@
 </section>
 <button class="up"><a href="#" title="Вернуться к началу страницы">Вверх</a></button>
 </div>
+
 <script src="jquery_toggle_table.js"></script>
 <script src="js_open_menu.js"></script>
 <script src="js_search_table.js"></script>
