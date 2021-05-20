@@ -6,10 +6,11 @@ body {
   width: 100%;
   height: auto;
   background: #0E0756;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
- 
+  
 }
+
 .lightning{
   position: fixed;
   top: 0;
@@ -56,7 +57,6 @@ animation-delay: 2s;
 .content {
   width: 90%;
   margin: 0 auto;
- 
 }
 .list a {
   text-decoration: none;
@@ -183,7 +183,6 @@ p {
   transition: 0.5s;
 }
 .know a {
-  font-family: 'Lato', sans-serif;
     font-family: 'Vollkorn SC', serif;
   text-decoration: none;
 }
@@ -211,7 +210,6 @@ p {
   transition: 0.5s;
 }
 .more a {
-  font-family: 'Lato', sans-serif;
     font-family: 'Vollkorn SC', serif;
   text-decoration: none;
 }
@@ -239,13 +237,13 @@ p {
   opacity: 1;
   right: 0;
 }
-.table_box {
+.table-box {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.table_box {
+.table-box {
   width: 100%;
   padding-bottom: 40px;
 }
@@ -284,13 +282,14 @@ th {
  display: none; 
 }
 tbody {
-  width: 200%;
-}
-tr {
   width: 100%;
 }
+tr {
+  max-width: 100%;
+  overflow: hidden;
+}
 td {
-  
+  overflow: hidden;
   color: white;
   background-image: url("https://i.ibb.co/nQgCJzh/time-travel-card-bg.jpg"); 
   padding-top: 10px;
@@ -304,7 +303,9 @@ td a {
 td a:hover {
   font-size: 30px;
 }
-
+tr:hover {
+  background-color: ;
+}
 h1 {
   font-family: 'Vollkorn SC', serif;
   font-size: 30px;
@@ -381,13 +382,25 @@ button:hover {
   font-size: 20px;
 }
 .up a {
-  font-family: 'Lato', sans-serif;
   font-family: 'Vollkorn SC', serif;
   text-decoration: none;
   color: #D70E67;
 
 }
 
+.onoff {
+  margin-top: 20px;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px 5px 5px 5px;
+  background: #3FB3F8;
+  border: none;
+  font-family: 'Vollkorn SC'; 
+  color: #D70E67;
+}
+.onoff:hover {
+  font-size: 10px;
+}
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
@@ -411,6 +424,7 @@ button:hover {
     font-size: 15px;
     padding: 5px;
   }
+ 
   .text {
     font-size: 15px;
     line-height: 15px;
@@ -432,4 +446,67 @@ button:hover {
   .up {
     margin-left: 70%;
   }
+  p {
+    font-size: 10px;
+  }
+  th {
+    max-width: 100%;
+    font-size: 10px;
+  }
+  
+  .onoff {
+    width: 90px;
+    height: 40px;
+    font-size: 8px;
+  }
+  
+  tbody {
+    font-size: 10px;
+    overflow: hidden;
+  }
+  
+  .more:hover span {
+  padding-right: 0px;
+    font-size: 10px;
+    
 }
+
+.more:hover span {
+  font-size: 10px;
+}
+  .more {
+    width: 80px;
+    height: 40px;
+   font-size: 12px;
+   
+  }
+  .know {
+    width: 80px;
+    height: 40px;
+    padding-top: 10px;
+  }
+  .know span {
+   
+   font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .know:hover {
+    font-size: 10px;
+  }
+  .know span:after {
+  right: 0px;
+  transition: 0.5s;
+    font-size: 10px;
+}
+
+.know:hover span {
+  padding-right: 0px;
+}
+
+.know:hover span:after {
+  opacity: 1;
+  right: 0px;
+}
+}
+
