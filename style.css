@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Vollkorn+SC:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Vollkorn+SC:wght@900&display=swap');
+
+body {
+  width: 100%;
+  height: auto;
+  background: #0E0756;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.lightning{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("lightning.jpg");
+  background-position: center center;
+  background-origin: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+  -o-filter: brightness(3);
+  -moz-filter: brightness(3);
+  z-index: -1;
+}
+
+/*Now just a opacity animation*/
+.flashit{
+-webkit-animation: flash ease-out 7s infinite;
+-moz-animation: flash ease-out 7s infinite;
+animation: flash ease-out 7s infinite;
+animation-delay: 2s;
+}
+
+@-webkit-keyframes flash {
+	from { opacity: 0; } 
+  92% { opacity: 0; }
+	93% { opacity: 0.6; }
+  94% { opacity: 0.2; }
+  96% { opacity: 0.9; } 
+	to { opacity: 0; }
+}
+
+@keyframes flash {
+	from { opacity: 0; } 
+    92% { opacity: 0; }
+	93% { opacity: 0.6; }
+    94% { opacity: 0.2; }
+    96% { opacity: 1; } 
+	to { opacity: 0; }
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+.list a {
+  text-decoration: none;
+  color: #005190;
+  font-family: 'Lato', sans-serif;
+}
+.list {
+  background-color: #D70E67;
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list a {
+  display: inline-block;
+  color: #0E0756;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.list a:hover {
+  background-color: #3FB3F8;
+  font-size: 26px;
+}
+.hambr{
+  color: #D70E67;
+  padding-left: 5%;
+  display: none;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+h {
+  font-family: 'Vollkorn SC', serif;
+  padding-top: 80px;
+ display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 45px;
+  font-style: bold;
+  color: #FE0404;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  text-indent: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  font-size: 20px;
+  color: #3FB3F8;
+}
+.more {
+    border-radius: 4px;
+    border: none;
+    color: #3FB3F8;
+    background: #F19CE8;
+    text-align: center;
+    font-size: 22px;
+    padding: 15px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+ .know {
+    border-radius: 4px;
+    border: none;
+    color: #3FB3F8;
+    background: #F19CE8;
+    text-align: center;
+    font-size: 22px;
+    padding: 15px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+.know span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.know a {
+    font-family: 'Vollkorn SC', serif;
+  text-decoration: none;
+}
+.know span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.know:hover span {
+  padding-right: 25px;
+}
+
+.know:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.more a {
+    font-family: 'Vollkorn SC', serif;
+  text-decoration: none;
+}
+.more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.more span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.more:hover span {
+  padding-right: 25px;
+}
+
+.more:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.table-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.table-box {
+  width: 100%;
+  padding-bottom: 40px;
+}
+input {
+  background: #3FB3F8;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 40px 12px 40px;
+  border-color: #3FB3F8;
+  width: 50%;
+  outline: 0;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border-color: #D70E67;
+  border-spacing: 0;
+  
+  border-collapse: collapse;
+  font-family: 'Lato', sans-serif;
+}
+tr {
+  width: 100%;
+}
+th {
+ height: 50px;
+ color: white;
+  font-style: bold;
+  font-size: 18px;
+  background-image: url("cosmos-bg.jpg"); 
+}
+#tableBody {
+ display: none; 
+}
+tbody {
+  width: 100%;
+}
+tr {
+  max-width: 100%;
+  overflow: hidden;
+}
+td {
+  overflow: hidden;
+  color: white;
+  background-image: url("cosmos-bg.jpg"); 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+td a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+td a:hover {
+  font-size: 30px;
+}
+tr:hover {
+  background-color: ;
+}
+h1 {
+  font-family: 'Vollkorn SC', serif;
+  font-size: 30px;
+  color: #D70E67;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.row {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.container {
+  position: relative;
+  width: 47%;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("cosmos-bg.jpg");
+}
+
+.container:hover .overlay-over {
+  opacity: 1;
+}
+
+.text {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Vollkorn SC', serif;
+  color: white;
+  font-style: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 40px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text a {
+  color: white;
+}
+.up  {
+  width: 90px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 80%;
+    height: 35px;
+  background: #3FB3F8;
+  color: #F19CE8;
+  border-style: hidden;
+}
+button:hover {
+  opacity: 0.5;
+  font-size: 20px;
+}
+.up a {
+  font-family: 'Vollkorn SC', serif;
+  text-decoration: none;
+  color: #D70E67;
+
+}
+
+.onoff {
+  margin-top: 20px;
+  width: 120px;
+  height: 50px;
+  border-radius: 5px 5px 5px 5px;
+  background: #3FB3F8;
+  border: none;
+  font-family: 'Vollkorn SC'; 
+  color: #D70E67;
+}
+.onoff:hover {
+  font-size: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .list {
+    display: none;
+  }
+  .hambr {
+   display: block;
+  }
+}
+@media screen and (max-width: 750px) {
+  .more {
+    font-size: 15px;
+    padding: 5px;
+  }
+ 
+  .text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 650px) {
+  table {
+    font-size: 10px;
+    max-width: 80%;
+  }
+  .up {
+    margin-left: 50%;
+  }
+}
+@media screen and (max-width: 465px) {
+  
+ 
+  table {
+  width: 100%;
+    text-align: left;
+  font-size: 7px;}
+  tr {
+  max-width: 90%;
+  
+}
+  table th{
+    font-size: 10px;
+    font-style: normal;
+    max-width: 100%;
+  }
+  table {
+   max-width: 90%; 
+  }
+}
+@media screen and (max-width: 407px) {
+  h {
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  .text {
+    font-size: 5px;
+  }
+  
+  p {
+    font-size: 10px;
+  }
+  
+  tr {
+    max-width: 70%;
+    font-size: 5px;
+  }
+  
+  .onoff {
+    width: 90px;
+    height: 40px;
+    font-size: 8px;
+  }
+  
+  
+  
+  .more:hover span {
+  padding-right: 0px;
+    font-size: 10px;
+    
+}
+
+.more:hover span {
+  font-size: 10px;
+}
+  .more {
+    width: 80px;
+    height: 40px;
+   font-size: 12px;
+   
+  }
+  .know {
+    width: 80px;
+    height: 40px;
+    padding-top: 10px;
+  }
+  .know span {
+   
+   font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .know:hover {
+    font-size: 10px;
+  }
+  .know span:after {
+  right: 0px;
+  transition: 0.5s;
+    font-size: 10px;
+}
+
+.know:hover span {
+  padding-right: 0px;
+}
+
+.know:hover span:after {
+  opacity: 1;
+  right: 0px;
+}
+}
+
